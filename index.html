@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:opsz,wght@9..144,900&display=swap"
+    rel="stylesheet">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+    rel="stylesheet">
+
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="banner">
+      <div class="header">
+        <div class="logoWrap"><img src="images/logo.svg" class="logo"></div>
+        <div class="hamWrap">
+          <img src="images/icon-hamburger.svg" id="hamburger" alt="botton icon" onclick="showMenu();">
+        </div>
+        <div class="menu">
+          <span>About</span>
+          <span>Services</span>
+          <span>Projects</span>
+          <button class="btnContact">Contact</button>
+        </div>
+
+      </div>
+      <div class="main">
+        <h1> We are creatives</h1>
+
+        <img src="images/icon-arrow-down.svg" alt="" class="arrow">
+      </div>
+    </div>
+
+    <div class="section section1">
+
+      <div class="left">
+        <div class="contentWrap">
+          <h1>Transform your brand</h1>
+          <p> We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <button class="btnLearn">LEARN MORE</button>
+        </div>
+      </div>
+
+      <div class="right">
+
+      </div>
+    </div>
+
+    <div class="section section2">
+      <div class="left">
+        <div class="contentWrap">
+          <h1>Stand out to the right audience</h1>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers,
+            and copywriters, we’ll build and extend your brand in digital places. </p>
+          <button class="btnLearn">LEARN MORE</button>
+        </div>
+      </div>
+      <div class="right">
+
+      </div>
+    </div>
+
+    <div class="section section3">
+
+      <div class="left">
+        <h2>Graphic design</h2>
+        <p>Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients’ attention.</p>
+
+      </div>
+      <div class="right">
+        <h2>Photography</h2>
+        <p>Increase your credibility by getting the most stunning,
+          high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+
+    <!-- testimonials -->
+    <div class="testimonials">
+      <h3>Client testimonials</h3>
+      <div class="clients">
+        <div class="client">
+          <div class="imageWrap">
+            <img src="images/image-emily.jpg" alt="" class="clientImg">
+          </div>
+          <p id="clientReview">We put our trust in Sunnyside and they delivered,
+            making sure our needs were met and deadlines were always hit.
+          </p>
+          <div class="clientInfo">
+            <p class="clientName">Emily R.</p>
+            <p class="clientRole">Marketing Director</p>
+          </div>
+        </div>
+
+        <div class="client">
+          <div class="imageWrap">
+            <img src="images/image-thomas.jpg" alt="" class="clientImg">
+          </div>
+          <p id="clientReview">Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.</p>
+          <div class="clientInfo">
+            <p class="clientName">Thomas S.</p>
+            <p class="clientRole">Chief Operating Officer</p>
+          </div>
+        </div>
+
+        <div class="client">
+          <div class="imageWrap">
+            <img src="images/image-jennie.jpg" alt="" class="clientImg">
+          </div>
+          <p id="clientReview">Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!</p>
+          <div class="clientInfo">
+            <p class="clientName">Jennie F.</p>
+            <p class="clientRole">Business Owner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- image Gallary -->
+    <div class="imageGallary">
+      <div class="imgWrap">
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" class="imageShow">
+      </div>
+      <div class="imgWrap">
+        <img src="images/desktop/image-gallery-orange.jpg" alt="" class="imageShow">
+      </div>
+      <div class="imgWrap">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="" class="imageShow">
+      </div>
+      <div class="imgWrap">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" class="imageShow">
+      </div>
+    </div>
+    <!-- footer      -->
+    <div class="footer">
+      <img src="images/logocopy.svg" class="footerLogo" alt="company logo">
+      <div class="footerNav">
+        <span>About</span>
+        <span>Services</span>
+        <span>Projets</span>
+      </div>
+
+      <div class="socialLinks">
+        <span><img src="images/icon-facebook.svg" class="socialIcon" alt="social icon"></span>
+        <span><img src="images/icon-instagram.svg" class="socialIcon" alt="social icon"></span>
+        <span><img src="images/icon-twitter.svg" class="socialIcon" alt="social icon"></span>
+        <span><img src="images/icon-pinterest.svg" class="socialIcon" alt="social icon"></span>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/sandeshad100">Sandesh Adhikari</a>.
+  </div>
+</body>
+
+
+<script>
+  var m = document.getElementsByClassName('.menu');
+  var newWidth;
+  var isDisplay = 0;
+  window.addEventListener('resize', function (event) {
+    newWidth = window.innerWidth;
+    console.log(newWidth);
+  });
+
+
+  function showMenu() {
+    if (newWidth <= 900) {
+
+      if (m.style.display == "") {
+        m.style.zIndex = "block";
+      } else {
+        m.style.display = "";
+      }
+
+    }
+
+  }
+
+
+
+
+
+
+
+
+</script>
+
+</html>
